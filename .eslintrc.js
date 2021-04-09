@@ -5,15 +5,17 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
+    '@react-native-community',
+    'airbnb-typescript',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-  ],
-  rules: {
-  },
+  plugins: ['@typescript-eslint'],
+  rules: {},
 };
